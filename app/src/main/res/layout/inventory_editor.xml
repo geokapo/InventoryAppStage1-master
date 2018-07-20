@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_items" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/product_name_edit_text"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_name"
+                android:inputType="textCapWords" />
+
+            <!-- price field -->
+            <EditText
+                android:id="@+id/product_price_edit_text"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_price"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/product_quantity_edit_text"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_quantity"
+                android:inputType="number" />
+
+            <!-- Supplier name field -->
+            <EditText
+                android:id="@+id/product_supplier_name_edit_text"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_supplier_name"
+                android:inputType="textCapWords" />
+
+            <!-- Supplier phone field -->
+            <EditText
+                android:id="@+id/product_supplier_phone_number_edit_text"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/category_supplier_phone"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
